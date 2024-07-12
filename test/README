@@ -1,0 +1,52 @@
+# Smart Trash Bin
+
+This project implements a smart trash bin using an ESP32 microcontroller. The trash bin features:
+
+- Ultrasonic sensors for detecting fill level and proximity
+- GPS for location tracking
+- Firebase integration for storing data
+- Web server for remote access
+- Telegram bot for control via messages
+- WiFi connectivity
+
+## Project Structure
+
+- `src/`: Contains all the source files for the project.
+- `main.ino`: Main Arduino file.
+- `*.h` and `*.cpp`: Header and source files for different functionalities.
+
+## Getting Started
+
+1. Clone this repository.
+2. Open the project in the Arduino IDE.
+3. Upload the code to your ESP32.
+
+## Dependencies
+
+- WiFi
+- HTTPClient
+- NewPing
+- ESP32Servo
+- TinyGPS++
+- PubSubClient
+- WebServer
+- ArduinoJson
+- UniversalTelegramBot
+- FirebaseESP32
+
+## Configuration
+
+- Modify `secrets.h` with your Firebase credentials.
+- Modify `credentials.h` with your Telegram bot token and chat ID.
+
+## Usage
+
+- Connect to WiFi using one of the predefined SSIDs and passwords.
+- Access the web server to monitor the trash bin data.
+- Send commands via Telegram to open or close the lid.
+- Data is periodically sent to Firebase.
+
+## License
+
+This project is licensed under the MIT License.
+
